@@ -52,22 +52,7 @@ python split_payment_slips.py -i scan.png -o slips/ --debug
 
 ## How It Works
 
-1. **Image Preprocessing**
-   - Resize image if too large
-   - Convert to grayscale
-   - Apply Gaussian blur to reduce noise
-   - Apply adaptive thresholding
-
-2. **Edge Detection**
-   - Use Canny edge detection
-   - Apply morphological operations to close gaps
-
-3. **Contour Detection**
-   - Find all contours in the edge-detected image
-   - Filter by area and aspect ratio
-   - Sort contours spatially (top-to-bottom)
-
-4. **Slip Extraction**
+ **Slip Extraction**
    - Extract each detected region with padding
    - Save as separate high-quality images
 
@@ -129,6 +114,4 @@ The system uses traditional computer vision techniques:
 - **Contour Analysis**: Identifies rectangular regions representing slips
 - **Spatial Sorting**: Orders slips logically (top-to-bottom, left-to-right)
 
-## License
 
-This project is provided as-is for educational and commercial use.
