@@ -1,4 +1,4 @@
-Payment Slip Splitter
+Payment Slip Splitter <br>
 This project automatically detects and splits individual payment slips from a collage image using computer vision.
 
 Features
@@ -28,3 +28,4 @@ Dependencies
 opencv-python (≥4.5.0)
 numpy (≥1.19.0)
 Pillow (≥8.0.0)
+
