@@ -1,18 +1,18 @@
 # ECG Signal Digitization from PhysioNet Images
 
-## 📌 Competition Overview
+##  Competition Overview
 This project is part of the **PhysioNet ECG Image Digitization** Kaggle competition.  
 The objective is to convert scanned ECG images into accurate **1-D digital ECG signals** that match the original ground-truth waveforms.
 
 ---
 
-## 🧠 Approach Summary
+##  Approach Summary
 This notebook implements a **classical image-processing–based pipeline** (non-deep learning) to digitize ECG signals from images.  
 The solution relies on traditional **computer vision and signal processing techniques** rather than neural networks.
 
 ---
 
-## ⚙️ Methodology
+##  Methodology
 
 ### 1. Image Preprocessing
 - Convert ECG images to grayscale
@@ -38,7 +38,7 @@ The solution relies on traditional **computer vision and signal processing techn
 
 ---
 
-## 📊 Results
+##  Results
 
 - **Public Score:** `-3.33`
 
@@ -54,14 +54,14 @@ The negative public score indicates that the extracted ECG signals do not suffic
 
 ---
 
-## ❗ Key Learnings
+##  Key Learnings
 - ECG digitization is a complex task requiring robust signal understanding
 - Rule-based pipelines struggle with diverse image conditions
 - Deep learning approaches are more suitable for competitive performance
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 - Use CNN / U-Net–based segmentation models
 - Separate grid removal and waveform extraction
 - Improve signal scaling and alignment
@@ -69,7 +69,7 @@ The negative public score indicates that the extracted ECG signals do not suffic
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - Python
 - OpenCV
 - NumPy
@@ -78,12 +78,12 @@ The negative public score indicates that the extracted ECG signals do not suffic
 
 ---
 
-## 📁 Files
+##  Files
 - `digitization-ecg-of-physionet.ipynb` — Main notebook
 - `submission.csv` — Generated submission file
 
 ---
 
-## 🧾 Disclaimer
+##  Disclaimer
 This project represents a **learning-based experimental attempt** using classical techniques.  
 The low public score highlights the limitations of non-learning approaches for this task.
