@@ -1,6 +1,6 @@
 # Dollar Bill Value Detection using HOG + SVM
 
-## Quiz 2 - Computer Vision
+## Quiz 2_CV
 
 This project implements a **dollar bill denomination classifier** using classic Computer Vision techniques to detect whether a bill is $1, $5, $10, or $20.
 
@@ -18,33 +18,6 @@ This project implements a **dollar bill denomination classifier** using classic 
 ---
 
 ## 🗂️ Project Structure
-
-```
-Quiz 2/
-├── bill_detection.py      # Main training and evaluation script
-├── Bill_dataset.zip       # Original dataset (zipped)
-├── Bill_dataset_temp/     # Extracted dataset
-│   └── Bill_dataset/
-│       ├── 1/             # $1 bill images (90 images)
-│       ├── 5/             # $5 bill images (13 images)
-│       ├── 10/            # $10 bill images (22 images)
-│       └── 20/            # $20 bill images (36 images)
-├── Train/                 # Training data (80% split)
-│   ├── 1/                 # 72 images
-│   ├── 5/                 # 11 images
-│   ├── 10/                # 18 images
-│   └── 20/                # 29 images
-├── Test/                  # Test data (20% split) - NO OVERLAP with Train
-│   ├── 1/                 # 18 images
-│   ├── 5/                 # 2 images
-│   ├── 10/                # 4 images
-│   └── 20/                # 7 images
-├── confusion_matrix.png   # Confusion matrix visualization
-├── sample_predictions.png # Sample prediction results
-└── README.md              # This file
-```
-
----
 
 ## 🔬 Computer Vision Techniques
 
@@ -310,10 +283,3 @@ TEST ACCURACY: 100.00%
 3. **Data augmentation** was not needed due to the nature of HOG features (already robust to small variations)
 4. **Class imbalance** ($1 has more samples) was handled implicitly by SVM
 5. **100% accuracy** achieved on the test set, showing the method is effective for this task
-
----
-
-## 👨‍💻 Author
-
-**Quiz 2 - Computer Vision Course**  
-Semester 7
